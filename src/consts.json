@@ -1,0 +1,34 @@
+{
+  "name": "Quiz Sliver",
+  "description": "COMSATS hybrid quiz solver",
+  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com https://*.firebaseio.com https://*.gstatic.com; object-src 'self'",
+  "version": "<%EXT_VERSION%>",
+  "iconsDir": "icons",
+  "services": [
+    "cookies",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "declarativeContent"
+  ],
+  "portalUrls": [
+    "https://cuonline.cuilahore.edu.pk:8090/*",
+    "http://cuonline.cuilahore.edu.pk:8090/*",
+    "https://cms.comsats.edu.pk:8092/*",
+    "http://cms.comsats.edu.pk:8092/*",
+    "https://swl-cms.comsats.edu.pk:8092/*",
+    "http://swl-cms.comsats.edu.pk:8092/*",
+    "https://cuonline.ciitwah.edu.pk:8089/*",
+    "http://cuonline.ciitwah.edu.pk:8089/*",
+    "https://cuonline.ciit-attock.edu.pk:8089/*",
+    "http://cuonline.ciit-attock.edu.pk:8089/*",
+    "https://cuonline.ciitvehari.edu.pk:8091/*",
+    "http://cuonline.ciitvehari.edu.pk:8091/*"
+  ],
+  "externalUrls": [
+    "https://cdnjs.cloudflare.com/*",
+    "https://ajax.googleapis.com/*",
+    "https://www.gstatic.com/*"
+  ],
+  "firebaseConfig": "<%FIREBASE_CONFIG%>"
+}
