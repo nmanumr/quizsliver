@@ -15,12 +15,13 @@ But the point to ponder is we are not doing some illegal. I just automated the p
 
 Now how can you install it on your PC? Below are the steps you can follow:
 
-1. Download the extension. Click on green "Clone or download" buttom above and Click "Download ZIP".
+1. Goto: https://github.com/nmanumr/quizsliver/releases/latest
+2. Download "QuizSliver.zip" under Assets
 2. Extract that ZIP somewhere in you PC.
 3. Open `chrome://extensions/` url in you Chrome browser.
 4. Turn on Developer mode on top right corner.
-5. Click newly came "Load Unpacked" button. And select the extracted folder.
-6. Open the CUOnline and continue solving you quizzes.
+5. Click newly came "Load Unpacked" button and select the extracted folder.
+6. Open the CUOnline and continue solving you quiz.
 
 ## How to update??
 
