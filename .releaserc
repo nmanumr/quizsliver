@@ -6,12 +6,10 @@
     "@semantic-release/commit-analyzer",
     "@semantic-release/release-notes-generator",
     ["@semantic-release/github", {
-      "assets": [
-        {"path": "dist/", "label": "Quiz Sliver Extension"}
-      ]
+      "assets": ["QuizSliver.zip"]
     }],
     ["@semantic-release/exec", {
-      "prepareCmd": "EXT_VERSION=${nextRelease.version} npm run build"
+      "prepareCmd": "EXT_VERSION=${nextRelease.version} npm run build && zip QuizSliver.zip dist/**/*"
     }]
   ]
 }
