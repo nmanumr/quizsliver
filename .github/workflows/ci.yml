@@ -1,0 +1,25 @@
+name: ci
+on:
+  push:
+    branches:
+      - master
+      - main
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Create Release
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
+          EXT_VERSION: ${{  }}
+        run: npx semantic-release

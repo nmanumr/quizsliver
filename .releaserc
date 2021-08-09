@@ -1,0 +1,17 @@
+{
+  "release": {
+    "branches": ["master", "next"]
+  },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    ["@semantic-release/github", {
+      "assets": [
+        {"path": "dist/**/*", "label": "Quiz Sliver Extension"}
+      ]
+    }],
+    ["@semantic-release/exec", {
+      "prepareCmd": "EXT_VERSION=${nextRelease.version} npm run build"
+    }]
+  ]
+}
