@@ -2,8 +2,7 @@
 
 ## Supported Versions
 
-Use this section to tell people about which versions of your project are
-currently being supported with security updates.
+Supported Versions of Quiz Sliver are given below recommend to use the lastest version currently being supported with security updates.
 
 | Version | Supported          |
 | ------- | ------------------ |
@@ -18,7 +17,7 @@ Avoid using those Unsupported version of Quiz Sliver as the ownership is transfe
 
 | Version | Older          |
 | ------- | ------------------ |
-| 1.2.7    | :x:                |
+| v1.2.7    | :x:                |
 | v1.2.6   | :x:                |
 | v1.2.5   | :x:                |
 | v1.2.3   | :x:                |
