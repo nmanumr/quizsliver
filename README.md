@@ -47,9 +47,6 @@ It not only works for COMSATS Islamabad but also supports other campuses. Below 
 5. https://cuonline.ciit-attock.edu.pk:8090/ (Attock)
 6. https://vhr-cms.comsats.edu.pk:8089/ (Vehari)
 
-
-## Security Policy
-
 ## Supported Versions
 
 Supported Versions of Quiz Sliver are given below recommend to use the lastest version currently being supported with security updates.
@@ -57,20 +54,10 @@ Supported Versions of Quiz Sliver are given below recommend to use the lastest v
 | Version | Supported          |
 | ------- | ------------------ |
 | 1.3.3 (Latest/Recommend)  | :white_check_mark: |
-| v1.3.2   | :x:                |
-| v1.3.1   | :x:                |
+| v1.3.2 & v1.3.1   | :x:                |
 | < v1.3.0   | :x:                |
 
-## Unsupported Versions
-
-Avoid using those Unsupported version of Quiz Sliver as the ownership is transferred
-
-| Version | Older          |
-| ------- | ------------------ |
-| v1.2.7    | :x:                |
-| v1.2.6   | :x:                |
-| v1.2.5   | :x:                |
-| v1.2.3   | :x:                |
+The Version less than `v1.3.0` is under previous ownership (`Unsupported`). Avoid using `v1.2.7 - v1.2.3` builds those are Unsupported version of Quiz Sliver as the `ownership` is transferred - `Security Policy` Regarding <a href="https://github.com/nmanumr/quizsliver/blob/master/SECURITY.md" target="_blank">Releases</a>
 
 
 ## Disclaimer
