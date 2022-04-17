@@ -71,4 +71,3 @@ These few changes reduced the final bundle size from previously 1.1Mb to only 12
 You can contact me via github discussions. If you want to contact harispasha you can mail him at [harispasha@protonmail.com](mailto:harispasha@protonmail.com) or join his discord server (note: I'm not too much active there):
 
 [![](https://discordapp.com/api/guilds/699000998877986896/embed.png?style=banner2)](https://discord.gg/QHNBZBD)
-
