@@ -1,7 +1,5 @@
 # Quiz Sliver
 
-**NOTE:** The original author of this code harispasha. I just got the source code directly from him and got permissions to make it opensource under some conditions. for more details see the FAQs and what's new sections. Also, note that I only have access to source code till now the data is still owned by haris pasha.
-
 COMSATS hybrid quizzes is the most fun part of whole university life. As everyone else, we also solved them in groups. We used to take screenshots of difficult MCQs and when they repeat from someone else we just check them to answer correctly. But being a clever mind I proceeded one step ahead and built a chrome extension that automatically save each MCQ you answer and when that MCQ is repeat it automatically mark the correct and submit.
 
 For a long period of time that was kept in my PC. Recently I randomly found in my PC and now I'm sharing it publicly. I don't know but may its already popular among the students, because I remember I shared it with some close friends.
