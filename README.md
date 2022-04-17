@@ -43,7 +43,7 @@ It not only works for COMSATS Islamabad but also supports other campuses. Below 
 1. https://cms.comsats.edu.pk:8093/ (Islamabad)
 2. https://cuonline.cuilahore.edu.pk:8091/ (Lahore)
 3. https://swl-cms.comsats.edu.pk:8082/ (Sahiwal)
-4. https://cuonline.ciitwah.edu.pk:8090/ (Wah)
+4. https://cuonline.cuiwah.edu.pk:8095/ (Wah)
 5. https://cuonline.ciit-attock.edu.pk:8090/ (Attock)
 6. https://vhr-cms.comsats.edu.pk:8089/ (Vehari)
 
