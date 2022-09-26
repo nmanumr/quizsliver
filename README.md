@@ -64,6 +64,11 @@ Following are few changes I made to the original source code:
 
 These few changes reduced the final bundle size from previously 1.1Mb to only 129Kb now.
 
+## Contributors of `quizsliver`
+<a href="https://github.com/nmanumr/quizsliver/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=nmanumr/quizsliver" />
+</a>
+
 ## Contact Me
 
 You can contact me via github discussions. If you want to contact harispasha you can mail him at [harispasha@protonmail.com](mailto:harispasha@protonmail.com) or join his discord server (note: I'm not too much active there):
