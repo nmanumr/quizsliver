@@ -3,13 +3,14 @@ import courseDetailsParser from "../parsers/courseDetails";
 
 export class QuizzesPage implements IHandler {
   handle(doc: Document) {
-    $(".startquiz[title^='Take']").on('click', async (e) => {
-      $(".se-pre-con").fadeIn("slow");
+    const btn = document.querySelector(".startquiz[title^='Take']");
+
+    btn.addEventListener('click', async (e) => {
       e.preventDefault();
       // Will be used if current course is lost from session
       localStorage["CurrentCourse"] = courseDetailsParser.parse(doc).courseCode;
-      window.location.assign($(e.target).attr('href'));
-    })
+      window.location.assign((e.target as HTMLElement).getAttribute('href'));
+    });
   }
 }
 

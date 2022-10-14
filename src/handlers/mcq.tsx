@@ -19,7 +19,8 @@ export class McqPage implements IHandler {
 
     async handle(doc: Document) {
         // remove mcq number
-        $(".quiz_opts b").remove();
+        document.querySelectorAll('.quiz_opts b').forEach(e => e.remove());
+
         if (!document.getElementById("quiz_questions"))
             return;
 

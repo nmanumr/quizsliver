@@ -13,9 +13,9 @@ export class InstructionsPage implements IHandler {
   async handle(doc: Document) {
     this.renderLoader();
 
-    let quizBtn = $(".start_quiz_btn");
-    $(quizBtn).removeAttr("href");
-    $(quizBtn).click(this.onQuizStart.bind(this));
+    let quizBtn = document.querySelector(".start_quiz_btn");
+    quizBtn.removeAttribute('href');
+    quizBtn.addEventListener('click', this.onQuizStart.bind(this));
 
     localStorage["currentQuiz"] = getQueryParam("QuizId");
 
@@ -52,7 +52,9 @@ export class InstructionsPage implements IHandler {
   renderUpdateModel(version: string) {
     document.body.style.overflow = 'hidden';
     document.body.appendChild(document.createElement('div'));
-    $(".container").css("filter", "blur(4px)");
+
+    const container = document.querySelector('.container') as HTMLElement;
+    container.style.filter = 'blur(4px)';
     render(<UpdateModal version={version}/>, document.body.lastElementChild);
   }
 }
