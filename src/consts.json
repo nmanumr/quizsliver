@@ -1,7 +1,6 @@
 {
   "name": "Quiz Sliver",
   "description": "COMSATS hybrid quiz solver",
-  "content_security_policy": "script-src 'self' https://cdn.firebase.com https://*.firebaseio.com https://*.firebaseio.com https://*.gstatic.com; object-src 'self'",
   "version": "<%EXT_VERSION%>",
   "iconsDir": "icons",
   "services": [

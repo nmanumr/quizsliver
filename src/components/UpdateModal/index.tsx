@@ -12,7 +12,8 @@ export default function UpdateModal({version}: Props) {
   useEffect(() => {
     setOpened((isOpened) => {
       if (isOpened === false) {
-        $(".container").css("filter", "blur(0px)");
+        const container = document.querySelector('.container') as HTMLElement;
+        container.style.filter = 'blur(0px)';
         document.body.style.overflow = 'initial';
       }
       return isOpened;

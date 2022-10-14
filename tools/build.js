@@ -18,8 +18,8 @@ async function build(outDir) {
   replaceConstsFromEnv();
 
   // Step 3: compile sliver.js and injector.js
-  console.log("Compiling sliver.js, injector.js ...");
-  let promises = ['sliver', 'injector'].map((file) => (
+  console.log("Compiling sliver.js ...");
+  let promises = ['sliver'].map((file) => (
       rollupBundle({
         input: `src/${file}.ts`,
         dest: `${outDir}/${file}.js`,

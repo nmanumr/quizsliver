@@ -21,11 +21,11 @@ export default function rollupBundle({dest, input, format = 'iife'}) {
     nodeResolve(),
     commonjs(),
     typescript(),
-    // terser({
-    //   format: {
-    //     comments: false,
-    //   }
-    // }),
+    terser({
+      format: {
+        comments: false,
+      }
+    }),
     // visualizer(),
   ];
 
