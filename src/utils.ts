@@ -12,3 +12,11 @@ export function hashCode(input: string): number {
     }
     return hash;
 }
+
+export function recreateNode(el: Element): Element {
+    var newEl = el.cloneNode(false) as Element;
+    while (el.hasChildNodes()) newEl.appendChild(el.firstChild);
+    el.parentNode.replaceChild(newEl, el);
+
+    return newEl;
+}

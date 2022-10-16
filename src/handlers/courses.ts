@@ -1,4 +1,5 @@
 import {IHandler} from "./base";
+import {recreateNode} from "../utils";
 
 export class CoursesPage implements IHandler {
   async handle(doc: Document) {
@@ -9,10 +10,10 @@ export class CoursesPage implements IHandler {
         .getAttribute('onclick')
         .match(/\/Courses\/SetCourse\/(\d+)/)[1];
 
-      trs[i].setAttribute('onclick', "");
-      trs[i].onclick = () => {
+      trs[i].removeAttribute('onclick');
+      recreateNode(trs[i]).addEventListener('click', () => {
         this.onCourseOpened(id, trs[i].querySelector('td').innerText.trim())
-      };
+      });
     }
   }
 
