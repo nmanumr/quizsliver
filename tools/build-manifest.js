@@ -12,16 +12,15 @@ export default function writeManifest(outDir) {
     icons: Object.fromEntries([16, 48, 128].map((s) => [s, `${consts.iconsDir}/icon${s}.png`])),
     permissions: [
       ...consts.services,
+    ],
+    host_permissions: [
       ...consts.portalUrls,
       ...consts.externalUrls,
     ],
-    host_permissions: [
-      'https://cdn.firebase.com',
-      'https://*.firebaseio.com',
-      'https://*.gstatic.com'
-    ],
     content_scripts: [{
-      matches: [...consts.portalUrls],
+      matches: [
+        ...consts.portalUrls.map(e => e + '*')
+      ],
       js: ['sliver.js']
     }],
   }
