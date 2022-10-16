@@ -2,12 +2,13 @@ import {_app$} from "../@types";
 import {IHandler} from "./base";
 import {h, render} from 'preact';
 import {hashCode} from "../utils";
+import {recreateNode} from "../utils";
 import mcqParser from "../parsers/mcq";
 import mcqService from "../services/mcq";
 import {ParsedMcqWithAnswer} from "../types";
 import userInfoParser, {IUserInfo} from "../parsers/userInfo";
 import courseDetailsParser, {ICourseDetail} from "../parsers/courseDetails";
-import Loader, {LoaderState, Globals as LoaderGlobals} from "../components/Loader";
+import Loader, {LoaderState} from "../components/Loader";
 
 export class McqPage implements IHandler {
     private mcqFound = false;
@@ -58,8 +59,9 @@ export class McqPage implements IHandler {
     }
 
     bindOnMcqSubmitted() {
-        document.querySelector(`.submit_btn`).setAttribute('onclick', '');
-        document.querySelector(`.submit_btn`).addEventListener("click", this.onMcqSubmit.bind(this));
+        let element = document.querySelector(`.submit_btn`);
+        element.removeAttribute('onclick');
+        recreateNode(element).addEventListener("click", this.onMcqSubmit.bind(this));
     }
 
     bindOnOptionSelected() {
