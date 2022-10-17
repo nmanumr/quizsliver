@@ -6,10 +6,10 @@ Supported Versions of Quiz Sliver are given below recommend to use the lastest v
 
 | Version  | Supported          |
 | -------- | ------------------ |
-| 1.3.3 (Latest/Recommend)  | :white_check_mark: |
-| v1.3.2   | :x:                |
-| v1.3.1   | :x:                |
-| < v1.3.0 | :x:                |
+| v1.3.7   | :white_check_mark: |
+| v1.3.6   | :x:                |
+| v1.3.5   | :x:                |
+| < v1.3.4 | :x:                |
 
 ## Unsupported Versions
 
